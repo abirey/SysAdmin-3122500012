@@ -62,6 +62,8 @@ Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi vi
 
 ### LANGKAH LANGKAH
 
+(disini saya menggunakan sebagian screenshoot dengan milik Reza karena saya lupa screenshoot)
+
 1. **Membuat Virtual Machine**
    - Buka VirtualBox dan klik tombol "New" untuk membuat mesin virtual baru.
    - Beri nama mesin virtual SysAdmin-3122500024.
@@ -70,8 +72,8 @@ Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi vi
 
    - **Pastikan Centang Kotak ** Supaya dapat melakukan Custom Install.
      
-   - Atur alokasi RAM minimal 4096 MB. Disini saya alokasi 8GB
-   - Atur alokasi core CPU minimal 2 Core, disini saya alokasi 6 Core dari 12 Core
+   - Atur alokasi RAM minimal 4096 MB. Disini saya alokasi 4166 MB
+   - Atur alokasi core CPU minimal 2 Core, disini saya alokasi 3 Core dari 4 Core
      
    ![SPEK](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f8dcbcba-39e2-45af-9896-c70f6b26c257)
     
@@ -92,23 +94,24 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   Note: Masukkan Angka Lalu tekan **ENTER** atau Gunakan _Panah Navigasi_ untuk memilih Menu
   
   1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
-      Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500024
+      Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500012
       
-     ![Screenshot (1291)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/984652d6-352b-450d-9027-4afacc1ace84)
+     ![Screenshot (1291)]()
 
-  2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *user*
+  2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *awal*
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
+     ![image]()
 
   **PARTISI PART**
   
-  3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 37.6 GB ATA VBOX HARDDISK**
+  3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 29 GB ATA VBOX HARDDISK**
       
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f22f4aaf-6f6e-4200-b31b-4563c603c1e8)
+     ![image]()
 
   4. Kemudian muncul prompt Ya Tidak, Pada Bagian ini bisa dijawab Tidak Setelah itu Akan Muncul Partisi Kosong **(FREE SPACE)** Masukkan Angka kemudian tekan enter
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dfe5ac12-adfe-42ad-9406-851b158515d9)
+     ![image](![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/72aff039-596f-4bff-a61d-0560fb00b72f)
+)
 
   5. Setelah Memilih Create New Partition, Masukkan Maximum Size dari disk yang akan dibagi
 
@@ -160,7 +163,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
      
      ![Screenshot (1319)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/55b24f48-41c8-4ab4-89a2-a10194487730)
 
-  2. Masukkan Hostname Berupa SysAdmin-3122500024
+  2. Masukkan Hostname Berupa SysAdmin-3122500012
 
      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ed69ee94-87a8-4c47-89ac-d7036ff1a21a)
     
