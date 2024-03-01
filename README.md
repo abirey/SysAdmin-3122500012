@@ -1,293 +1,156 @@
-# DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
-| TUGAS | FILE |
-| ------| -----|
-| [TUGAS 1](#tugas-1) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
-| TUGAS 2 | - |
+# FILE LAINNYA
 
-# KELOMPOK 2
+[BACK](../README.md)
 
-| NAMA | NRP |
-| ---- | --- |
-| [MUHAMAD REZA MUKTASIB](https://github.com/Reza1290)| 3122500024 |
-| [AWAL RAYA](https://github.com/abirey)| 3122500012 |
-| [ALI AZHAR P.B](https://github.com/AliAzhar14)| 3122500011 |
-
--------
-
-# TUGAS 1
+# TUGAS 2
 
 **DAFTAR ISI**
 
-- [SOAL 1](#1-langkah-langkah-instalasi-sistem-operasi-debian)
-  - [Requirements](#persyaratan-sistem)
-  - [Persiapan](#persiapan)
-  - [Mulai](#langkah-langkah)
-
-- [SOAL 2](#2-perbedaan-debian-12--bookworm--dengan-debian-11--bullseye-)
-
-- [SOAL 3](#3-fungsi-file-etcgroups-dan-formatnya)
-- [SOAL 4](4-perbedaan-su-dan-su-)
-  - [COMMAND SU](#a-su)
-  - [COMMAND SU-](#b-su--)
-- [SOAL 5](#5-fungsi-sudo-command)
-- [SOAL 6](#6jelaskan-langkah-langkah-penambahan-user-anda-sebagai-user-sudo--gunakan-perintah-su---lalu-setelah-masuk-sebagai-root-jalankan-perintah-visudo-tambahkan-user-anda-di-bawah-user-root-pada-bagian---user-privilege-specification)
+- [SOAL 1](#1-linux-directory-structure)
+- [SOAL 2](./PPT_SYSADMIN.md)
+- [SOAL 3](#3-setting-network)
 
 
-## 1. Langkah-langkah Instalasi Sistem Operasi Debian
-
-Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi virtualisasi seperti VirtualBox, VMWare Player, atau Vmware Fusion (untuk MAC). Berikut adalah langkah-langkah instalasi Debian dengan menggunakan VirtualBox.
+## 1. Linux Directory Structure
 
 
-------------
+Berdasarkan referensi https://www.debianadmin.com/linux-directory-structure-overview.html, struktur direktori di Linux berbeda dengan di Windows. Struktur Direktori mengikuti aturan **Filesystem Hierarchy Structure (FHS)** yang diatur oleh Free Standard Group meskipun saat pendistribusian terkadang cenderung menyimpang dari standar.
 
+Direktori-direktori yang berbeda antara lain.
 
-
-### Persyaratan Sistem:
-- CPU: Minimal 2 core.
-- RAM: Minimal 4096 MB (4 GB).
-- HDD: Minimal 25 GB dengan partisi sebagai berikut:
-  - / (root): 20 GB
-  - /storage: 5 GB
-  - swap: 1,5 GB
-- Hostname: SysAdmin-NRP
-
-
-### Persiapan:
-   - Unduh file ISO Debian dari Repo resmi [DISINI](https://kartolo.sby.datautama.net.id/debian-cd/12.5.0/amd64/iso-cd/).
-   [TUTORIAL DOWNLOAD](#download)
-   - Unduh dan instal aplikasi VirtualBox dari web resmi [DISINI](https://www.virtualbox.org/wiki/Downloads).
-   [TUTORIAL INSTALL](#download)
-
-
-
-### LANGKAH LANGKAH
-
-(disini saya menggunakan sebagian screenshoot dengan milik Reza karena saya lupa screenshoot)
-
-1. **Membuat Virtual Machine**
-   - Buka VirtualBox dan klik tombol "New" untuk membuat mesin virtual baru.
-   - Beri nama mesin virtual SysAdmin-3122500024.
-     
-   ![CREATE](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/411502a5-8282-4e85-ac03-59b31a322b0e)
-
-   - **Pastikan Centang Kotak ** Supaya dapat melakukan Custom Install.
-     
-   - Atur alokasi RAM minimal 4096 MB. Disini saya alokasi 4166 MB
-   - Atur alokasi core CPU minimal 2 Core, disini saya alokasi 3 Core dari 4 Core
-     
-   ![SPEK](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f8dcbcba-39e2-45af-9896-c70f6b26c257)
-    
-   - Buat hard disk virtual baru dengan ukuran minimal 25 GB.
-     
-   ![DISK SIZE](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5d2bd9a7-7e5b-41d2-bae9-7a65e0c05abc)
-
-
-
-2. **Instalasi OS Debian**
+1. **`/root`**
    
-Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jalankan dengan menekan tombol Start, setelah VM Menyala maka akan disuguhkan tampilan HOME dari Debian OS.
+    > Struktur direktori dimulai dari root file system yang menjadi root direktori untuk seluruh struktur. Partisi ini akan disimpan di UNIX atau Unix-compatible system.
 
-![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
+2. **`/boot`**
 
-  **A. PILIHAN INSTALL**
-  
-  Note: Masukkan Angka Lalu tekan **ENTER** atau Gunakan _Panah Navigasi_ untuk memilih Menu
-  
-  1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
-      Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500012
-      
-     ![Screenshot (1291)]()
+    > Direktori ini mengandung file boot loader termasuk Grub atau Lilo, Kernel, initrd dan file konfigurasi system.map.
 
-  2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *awal*
+3. **`/sys`**
+	
+    >Direktori ini terdapat Kernel, Filmware dan file system lainnya yang terkait.
 
-     ![image]()
+4. **`/sbin`**
+	
+    >Direktori ini mengandung sistem binari yang penting dan alat sistem administrasi yang penting untuk sistem operasi dan performa/kinerja.
 
-  **PARTISI PART**
-  
-  3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 29 GB ATA VBOX HARDDISK**
-      
-     ![image]()
+5. **`/bin`**
 
-  4. Kemudian muncul prompt Ya Tidak, Pada Bagian ini bisa dijawab Tidak Setelah itu Akan Muncul Partisi Kosong **(FREE SPACE)** Masukkan Angka kemudian tekan enter
+	> Direktori ini mengandung binari-binari yang penting untuk pengguna dan utilitas tersebut dibutuhkan di mode user tunggal. Contohnya, termasuk cat, ls, cp, dan lainnya.
 
-     ![image](![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/72aff039-596f-4bff-a61d-0560fb00b72f)
-)
+6. **`/lib`**
 
-  5. Setelah Memilih Create New Partition, Masukkan Maximum Size dari disk yang akan dibagi
+	> Direktori ini mengandung file library/pustaka untuk semua binari yang disimpan di direktori /bin dan /sbin.
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5b629cb0-bcf4-4c19-8488-5cc2a8ebc3ab)
+7. **`/dev`**
 
-  6. Disini kita pilih Logical -> Beginning ( diatas ) End ( dibawah )
+	> Direktori ini mengandung sistem file dan driver yang penting.
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/c555220b-7f7e-49c7-9145-560095e28308) Hasil
+8. **`/etc`**
 
-  7. Karena 5GB untuk Mount Point /storage maka kita pilih angka 3 untuk mengganti mount point, Kemudian Pilih Enter Manual (10)
+	> Direktori ini mengandung file sistem konfigurasi yang penting termasuk /etc/hosts, /etc/resolv.conf, nsswicth.conf, default dan file konfigurasi network. Kebanyakan adalah sistem host spesifik dan file konfigurasi aplikasi.
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/cbc907cb-15cf-4f0b-828e-373c45fce928)
+9. **`/home`**
 
-  8. Setelah itu kita simpan dengan memilih angka 11
+	> Semua pengguna direktori home disimpan di dalam direktori ini dengan pengecualian direktori root home yang disimpan di dalam /root. DIrektori ini terdapat file pengguna dan setting personal.
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/6c3a9592-9b8b-4fb9-8a50-0af53a495ea1)
+10. **`/media`**
 
-  9. Lakukan langkah yang sama untuk SWAP dan Root Directory, **Khusus Swap perhatikan langkah berikut**
+	> Direktori umum yang diperuntukkan sebagai tempat media yang bisa dilepas seperti CD-ROM, USB, Floppies, dan lainnya.
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/0e071126-e6be-41fc-8e99-fa93bed9d5d6)
+11. **`/mnt`**
 
-     Pilih OPSI SWAP
-     
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/4f86ad7a-4e4e-420a-b207-5b39a8f76e57)
+	> Direktori umum yang diperuntukkan untuk file sistem sementara. Hal ini sangat berguna ketika melakukan troubleshoot dari CD-ROM dan lainnyayang dimana mungkin dibutuhkan sistem file root dan mengedit konfigurasi.
 
-  10. Untuk Opsi / (root) pastikan mount point adalah "/" Lakukan Simpan
-  11. Setelah Tersimpan Kita Lakukan WRITE DISK PARTITION, Pastikan YES
-      
-      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/583d8f0a-9a77-4e36-8dc0-d47d76ed59c8)
+12. **`/opt`**
 
-  12. Secara Otomatis Sistem akan Menginstall BASE SYSTEM tunggu beberapa saat
-      
-      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/af1f62fc-64c7-4b97-9ced-0c32d3a7a422)
+	> Direktori yang jaarang digunakan untuk Optional Software Package. Ini secara ekstensif digunakan di sistem operasi UNIX seperti Sun Solaris di mana paket perangkat lunak diinstal.
 
-  13. Setelah Terinstall User diminta memasukan **REPOSITORY UNTUK MENDOWNLOAD SOFTWARE**
-      Saya Menyarankan menggunakan Mirror https://kartolo.sby.datautama.net.id/ Karena Mirror berada di Indonesia dan up to date.
+13. **`/usr`**
 
-  14. Jika Muncul Bagian ini silahkan di Enter Saja (DEFAULT OPTION)
-      
-      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dab1eab5-205d-4669-83d2-0a3916bc45ca)
+	> Sub hierarki menuju file sistem root yang merupakan direktori data pengguna. Mengandung utilitas spesifik pengguna dan aplikasi. Terdapat juga banyak file sistem yang penting tetapi juga tidak sebegitu penting (important but not critical) yang dipasang. Akan ditemukan kembali direktori bin, sbin, dan lib yang mengandung pengguna non-critical dan binari sistem dan pustaka yang terkait dan direktori yang dibagikan. Terdapat juga direktori dengan file didalamnya.
 
-  15. Pastikan Tersambung Ke INTERNET, kemudian ditunggu hingga selesai maka DEBIAN 12.5 AKAN TERINSTALL SEMPURNA.
+14. **`/usr/sbin`**
 
-  **B. PILIHAN GRAPHICAL INSTALL**
+	> Direktori ini mengandung sistem binari dan utilitas jaringan yang non-essential non-critical.
 
-  DEBIAN memudahkan kita dalam Menginstall OS mereka dengan menyediakan GRAPHICAL INSTALLER!
+15. **`/usr/bin`**
 
-  1. Pilih Bahasa sesuai preferensi
-     
-     ![Screenshot (1319)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/55b24f48-41c8-4ab4-89a2-a10194487730)
+	> Direktori ini mengandung binari command/perintah untuk pengguna yang non-essential non-critical.
 
-  2. Masukkan Hostname Berupa SysAdmin-3122500012
+16. **`/usr/lib`**
 
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ed69ee94-87a8-4c47-89ac-d7036ff1a21a)
+	> File pustaka untuk binari di direktori /usr/bin dan  /usr/sbin.
+
+17. **`/usr/share`**
+
+	> Platform independen untuk direktori data yang dibagi(shared).
+
+18. **`/usr/local`**
+
+	> Sub hierarki di bawah dari direktori /usr yang memiliki sistem lokal data spesifik termasuk pengguna dan sistem binari serta pustakanya.
+
+19. **`/var`**
+
+	> Direktori ini sebagian besar dipasang sebagai filesystem yang terpisah di bawah root di mana semua kandungan variabel sepeti logs, file spool untuk printer, crontab, ji jobs, mail, proses yang berjalan, mengunci file yang lainnya. Dibutuhkan pemeliharaan untuk perencanaan file sistem ini dan pemeliharaan seperti ini akan memenuhi dengan cepat dan ketika filesystem penuh akan mengakiban permasalahan operasional di sistem dan aplikasi.
+
+20. **`/tmp`**
+
+	> Sistem file sementara yang menyimpan file sementara yang dibersihkan di sistem reboot. Terdapat juga direktori /var/tmp yang menyimpan file sementara juga. Satu-satunya perbedaan keduanya yaitu di direktori /var/tmp menyimpan file yang diproteksi di sistem reboot. Dengan kata lain, direktori tersebut tidak terhapus/hilang saat reboot.
+
     
-  3. Isilah Beberapa Credentials Yang diwajibkan untuk diisi, root password, akun pengguna dsb.
-
-     ![Screenshot (1322)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5717b8c0-4bb5-461b-8a44-21b0876d008f)
-
-  4. Setting Partisi seperti dibawah
-
-     ![Screenshot (1324)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/57702346-9075-4bce-87c0-6287a7b360a5)
-
-  5. Pada Bagian Ini Lakukan Klik Menggunakan Mouse Ke Partisi lalu Buat Partisi Baru Pastikan Mount Point telah sama
-  6. jika belum dapat diubah, dan pastikan use as benar
-
-     ![Screenshot (1325)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/151b6f65-10e1-4a97-976b-1dbb0b0f5468)
-
-  7. Jalankan Installer Menekan Continue.
-  8. Tunggu Hingga Terinstall Sempurna.
+21. **`/proc`**
+    > Kemudian terdapat vrtual file sistem /proc yang berada di memori dan dipasang di bawah root penahan kernel dan statistik proses di format file teks.
 
 
-------------
+### LINUX DIRECTORY STRUCTURE Visual View
 
-## 2. PERBEDAAN DEBIAN 12 ( BOOKWORM ) DENGAN DEBIAN 11 ( BULLSEYE )
+Berikut adalah gambar visual dalam bentuk tree dari directory root
 
-Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) !
+![alt text](<assets/WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
 
-|Jenis |Debian 12 (bookworm)|Debian 11 (bullseye)| Sumber |
-|-----|--------|---------------------------------| ------ |
-|Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS | [LIST](https://docs-cortex.paloaltonetworks.com/r/Linux-Kernel-Versions/Debian-11-x86_64) |
-| | + support untuk Rust, Intel Meteor Lake, dan ARM SoC. | - | |
-| | + Kernel Concurrency Sanitizer + Kernel Control Flow Integrity (KCFI) support (KCSAN) |         | |
-|Kebutuhan Sistem  |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB   |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
-| Penerapan Systemd | Versi 252 | Versi 247 | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.html) |
-| |Resolvectl menampilkan informasi lokasi host resolved jika komunikasi terenkripsi | - | [ARTIKEL](https://www.debian.org/releases/stable/arm64/release-notes/ch-information.en.html#systemd-resolved) |
-| Package | 64419 packages (11089 new) | 53330 packages | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.en.html#newdistro) |
-| | non-free firmware packages dipindahkan dari non-free ke non-free-firmware | Manual diubah "4.1.8 bullseye: recommended to add non-free-firmware" dan 5.1.1. | [BOOKWORM 2.2](https://www.debian.org/releases/stable/i386/release-notes/ch-whats-new.en.html#newdistro) [BULLSEYE 4.1.8](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.en.html#non-free-firmware) [BULLSEYE 5.1.1](https://www.debian.org/releases/stable/amd64/release-notes/ch-information.en.html#non-free-split) |
-| Filesystems | NTFS sudah ada (bulit in) -> ikut kernel 5.15, + ntfs2btrfs | harus menggunakan third party | |
+![alt text](assets/linuk.png)
 
 
-## 3. FUNGSI FILE "etc/groups" DAN FORMATNYA
+# 2. [MARP CLICK](./PPT_SYSADMIN.md)
+# 3. Setting Network
 
-  Bersumber dari manual books linux ( dapat menggunakan command "man"). "etc/groups" sebuah file teks yang berisi definisi dari groups yang ada pada system. 
-
-  Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
-
-        group_name:password:GID:user_list
-      
+Ada 2 cara kita dapat melakukan setting network di debian yaitu dengan GUI ( NETWORK MANAGER ) dan CLI ( Menggunakan file /etc/network/interfaces)
 
 
-  Dengan rincian sebagai berikut:
+Default Gateway :
 
-        group_name  
+![alt text](assets/image-jaringan5.png)
 
+#### A. NETWORK MANAGER
+- Buka Network Manager
+- Buka setting pada interface terhubung/ sambungkan terlebih dahulu
 
+![alt text](assets/image-jaringan.png)
 
-  nama dari grup.
+- Pilih Menu IPV4 lalu klik manual, isi sesuai kolom
 
-        password
+![alt text](assets/image-jaringan4.png)
 
+- hasil
 
+![alt text](assets/image-jaringan8.png)
+#### B. Melalui interfaces File
 
-  password dari group yang terenkripsi.  Jika kosong maka groups tidak berpassword.
+- Jalankan Perintah
 
-        GID  
+![alt text](assets/image-jaringan7.png)
 
+- Setting seperti format berikut
 
-       
-  GROUP ID bersifat numerik.
+![alt text](assets/image-jaringan6.png)
 
-        user_list
+- lakukan ifdown ifup nama interface
 
+![alt text](assets/image-jaringan9.png)
 
+- hasil
 
-  list dari username user yang berada pada grup, dipisahkan dengan koma.
+![alt text](assets/image-jaringan10.png)
 
-## 4. PERBEDAAN SU dan SU-
-
-  Sebelumnya berikut adalah format pattern dari command su di linux :
-  
-        su [options] [-] [user [argument...]]
-
-### a. "su"
-
-  Perintah su tanpa options atau param nama digunakan untuk melakukan superuser user sekarang (root shell saat ini).
-    
-  contoh :
-
-
-### b. "su -"
-
-  (-) strip, adalah opsi yang dapat digunakan pada command su, digunakan untuk berpindah dengan root di environtement baru dengan menginisialisasi lingkungan shell baru.
-    jadi seperti halaman login awal.
-
-
-## 5. FUNGSI "SUDO" COMMAND
-
-  Secara singkat, Sudo merupakan singkatan dari superuser do. Dengan menggunakan ini, pengguna non-root dapat menjalankan perintah yang hanya bisa dilakukan oleh hak istimewa superuser. Ini memungkinkan pengguna dapat melakukan tugas administratif tanpa membuka resiko keamanan yang terkait dengan penggunaan root. Memudahkan membedakan environtment sendiri dan environtment administrator tanpa harus menggunakan kredensial sendiri maupun root.
-
-  Penggunaannya saat kita menggunakan akun kita misal user lalu terdapat command yang mengharuskan permission diatas kita, kita dapat melakukan sudo tanpa perlu masuk ke root dengan masuk sebagai superuser atau user lain.
-  
-
-## 6.	Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " # User privilege specification"
-
-  Sebelumnya kita akan mencoba melakukan sudo dengan username "user" (belum ditambahkan ke sudoers file).
-
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ac7da5bb-8367-4196-bd0c-508fa349393b)
-  
-  disini gagal.
-
-  ### SETUP VISUDO ( SUDOERS FILE )
-
-  lakukan su - untuk masuk ke dalam root sehingga kita memiliki privilage superuser
-
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/cd8926b1-124a-46e7-b1b9-8929eeb817fc)
-  
-  setelah itu ketikan visudo, dan kita lakukan edit pada bagian User Privilage
-  
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/3079725c-0d59-49dd-bb14-aee4bca41a82)
-
-  setelah mendapat privilage username user dapat menggunakan sudo command
-  
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/23168c6f-fb3a-4eec-9cf7-5272af3bcb99)
-
-  
-  
-  
-  
+[sumber](https://wiki.debian.org/NetworkConfiguration#Starting_and_Stopping_Interfaces)
