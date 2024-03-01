@@ -1,8 +1,17 @@
-# FILE LAINNYA
+# DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
+| TUGAS | FILE |
+| ------| -----|
+| [TUGAS 1](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
+| [TUGAS 2](#tugas-2) | _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/README.md)_ , _[MARP CLICK](TUGAS_2/PPT_SYSADMIN.md)_, _[PDF MARP](TUGAS_2/PPT_SYSADMIN.pdf)_|
 
-[BACK](../README.md)
+# KELOMPOK 2
 
-# TUGAS 2
+| NAMA | NRP |
+| ---- | --- |
+| [MUHAMAD REZA MUKTASIB](https://github.com/Reza1290)| 3122500024 |
+| [AWAL RAYA](https://github.com/abirey)| 3122500012 |
+| [ALI AZHAR P.B](https://github.com/AliAzhar14)| 3122500011 |
+
 
 **DAFTAR ISI**
 
