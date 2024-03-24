@@ -1,0 +1,16 @@
+1. lakukan instalasi bind9
+
+2. cek instalasi di /etc/bind
+3. cek konfigurasi utama bind di named.conf.
+4. Menambahkan ACL (access list), control, dan include 3 file.
+5. Buka named.conf.option, mengisi provider dan listen-on. Listen ditambahkan sesuai kelompok masing-masing
+6. Buka named.conf.local, untuk mengset atau konfigurasi zone file. Melakukan pengubahan zone sesuai nama kelompok.
+7. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar.
+8. Pergi ke arah configuration zone file. 
+9. Masuk ke zone file pertama dan mengubah data di dalamnya.
+10. Masuk ke zone file kedua (.inv) untuk mengubah data seperti file sebelumnya.
+11. Jalankan sudo systemctl restart named untuk menjalankan sistem bind.
+12. Cek status bind apakah running atau tidak.
+13. Cek apakah port terbuka atau tidak.
+14. Gunakan perintah dig.
+15. Gunakan perintah nslookup.
