@@ -1,5 +1,5 @@
 1. lakukan instalasi bind9
-
+![alt text](assets/Screenshot 2024-03-24 153949.png)
 2. cek instalasi di /etc/bind
 3. cek konfigurasi utama bind di named.conf.
 4. Menambahkan ACL (access list), control, dan include 3 file.
