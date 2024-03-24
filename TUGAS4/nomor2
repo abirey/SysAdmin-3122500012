@@ -6,3 +6,10 @@
 6. Terakhir, resolver rekursif mengirim kueri ke nameserver domain.
 7. Alamat IP untuk 'kompas.com' kemudian dikembalikan ke resolver dari nameserver.
 8. Resolver DNS kemudian merespons ke peramban web dengan alamat IP dari domain yang awalnya diminta.
+
+PERBEDAAN ITERATIVE QUERY DAN RECURSIVE QUERY
+1. iterative query : DNS client berkomunikasi langsung dengan setiaop server DNS (yang terlibat dalam pencarian)
+Client akan mengirim permintaan ke DNS local server. Kemudian DNS local server akan menghubungi server lain untuk mendapatkan informasi yang diacri. Server DNS lain akan memebrikan informasi untuk mengarahkan DNS local server lain yang mungkin memiliki informasi lebih lanjut. Ini akan terus berlanjut hingga DNS local server menemukan IP adress yang sesuai dengan domain yang dicari.
+
+2. recursive query : DNS local server berkomunikasi dengan beberapa server DNS lain untuk mencari alamat IP dan mengembalikannya ke client.
+Client akan mengirim permintaan ke DNS local server. Kemudian DNS local server akan melakukan pencarian ecara berulang dengan menghubungi server DNS lain hingga menemukan IP address yang sesuai. DNS local server meenmukan IP adress yang sesuai dengan domain yang dicari. DNS local server mengmabilkan alamat IP ke klien.
