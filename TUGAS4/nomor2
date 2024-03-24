@@ -1,0 +1,8 @@
+1. Saat ingin mengakses 'kompas.com' query akan pergi ke internet dan ditangkap oleh DNS rekursif resolver.
+2. resolver melakukan query ke DNS root nameserver (.).
+3. Root server akan merespons resolver dengan alamat Top Level Domain (TLD) DNS server. Permintaan akan diarahkan ke TLD.com.
+4. Resolver kemudian melakukan permintaan ke TLD.com.
+5. Server TLD.com akan merespons dengan IP address dari nameserver domain, yaitu 'kompas.com'.
+6. Terakhir, resolver rekursif mengirim kueri ke nameserver domain.
+7. Alamat IP untuk 'kompas.com' kemudian dikembalikan ke resolver dari nameserver.
+8. Resolver DNS kemudian merespons ke peramban web dengan alamat IP dari domain yang awalnya diminta.
