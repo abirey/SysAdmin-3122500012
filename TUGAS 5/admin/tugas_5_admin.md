@@ -115,6 +115,7 @@ Instalasi dovecot server
 Final CHECK semua SERVICES
   ![.](image-77.png)
 Cek layanan Posfix
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/c271aea1-dc4a-406e-befa-cbcfa3827738)
 
 Roundcube
  
