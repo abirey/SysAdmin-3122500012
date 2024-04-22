@@ -117,7 +117,23 @@ Final CHECK semua SERVICES
 Cek layanan Posfix
 ![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/c271aea1-dc4a-406e-befa-cbcfa3827738)
 
+debian evolution
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/e094512c-78b7-487b-9fe9-ecec497b67e6)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/9a489b82-c36f-4346-9102-0cbdfa6b3859)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/cd325624-85b5-463e-b94e-28b14fe3a305)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/37645419-0504-4ee7-8d10-6f8dce04c82a)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/eca6731b-7290-4fba-a274-4988bc644d9a)
+
+
 Roundcube
- 
+ ![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/2a05db50-0338-45c9-99b1-ca782ace8a02)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/9820dc8a-0309-43f3-82c1-24ca6084504c)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/43357229-665b-4dcb-89da-4385dd2d0be5)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/7f751473-68f1-45e5-ab71-63e2d5168abb)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/4d6725ba-da2d-4964-979e-3b32e6cd44ce)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/7bef55f2-8a27-45d8-b578-a23c7c2e8620)
+![image](https://github.com/abirey/SysAdmin-3122500012/assets/129790468/38722c71-4c9c-4f16-9b20-61501f588ba1)
+
+
  
 	
